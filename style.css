@@ -1,0 +1,279 @@
+/*
+ Theme Name:   Blank Slate Child
+ Theme URI:    http://johnbwoodruff.net/twenty-fourteen-child/
+ Description:  Blank Slate Child Theme
+ Author:       John Woodruff
+ Author URI:   http://johnbwoodruff.net
+ Template:     blankslate
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  blank-slate-child
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+/* ----IMPORTS---- */
+/* ----GLOBAL STYLING---- */
+html {
+  background-color: #404040;
+}
+body {
+  line-height: 1.5;
+}
+body {
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif !important;
+}
+input[type=button],
+input[type=submit] {
+  -webkit-appearance: button;
+}
+/* ----FONT STYLING---- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+p {
+  margin-bottom: 1.5em;
+}
+i {
+  font-style: italic;
+}
+blockquote {
+  margin: 0 1.5em;
+  border-left: 3px solid #e53935;
+  padding-left: 15px;
+  quotes: "" "";
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+}
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 10px;
+}
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin-left: 10px;
+}
+ul ul,
+ol ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 15px;
+}
+ol ol,
+ul ol {
+  list-style-type: lower-latin;
+  list-style-position: inside;
+  margin-left: 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ----COLORS---- */
+/* Brand Colors */
+/* Text Colors */
+/* Background Colors */
+/*Other Colors */
+/* ----GENERIC THEME STYLING---- */
+* {
+  color: #212121;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+a {
+  color: #e53935;
+  text-decoration: none;
+}
+hr {
+  background-color: #dadada;
+  color: #dadada;
+}
+/* ----HEADER---- */
+#header {
+  width: 100%;
+}
+#header a {
+  color: #ffffff;
+}
+#header #branding {
+  background-color: #5677FC;
+  color: #ffffff;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#header #branding #site-description {
+  color: #ffffff;
+}
+#header #branding a {
+  font-size: 35px;
+}
+#header #menu {
+  background-color: #3b50ce;
+  color: #FFF;
+  padding: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  overflow: auto;
+}
+#header #menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+#header #menu #search {
+  float: left;
+}
+#header #menu #s {
+  border: none;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+#header #menu #searchsubmit {
+  height: 19px;
+  vertical-align: middle;
+  border-radius: 0 !important;
+  background-color: #fff;
+  border: none;
+  margin-left: -4px;
+  border-left: 1px solid #cccccc;
+}
+#header .menu {
+  display: inline-block;
+  float: right;
+}
+/* ----CONTAINER---- */
+#container {
+  min-height: 400px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#container #content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#container #content article {
+  margin-bottom: 40px;
+}
+#container #content article header > h2 {
+  margin-bottom: 20px;
+}
+#container #content article .post-edit-link {
+  display: none;
+}
+#container #content article .entry-meta {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+#container #content article .entry-content,
+#container #content article .entry-summary {
+  margin-bottom: 10px;
+}
+#container #content article .entry-footer {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+#container #content article .entry-footer .cat-links {
+  color: #727272;
+}
+#container #content article .entry-footer .tag-links {
+  color: #727272;
+}
+#container #content article .entry-footer a {
+  font-size: 12px;
+  background-color: #e53935;
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#container .header {
+  margin-bottom: 30px;
+}
+.widget-container {
+  list-style-type: none;
+}
+.widget-container ul {
+  margin-bottom: 20px;
+}
+.widget-container ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.widget-title {
+  font-weight: 400;
+}
+/* ----FOOTER---- */
+#footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #404040;
+  color: #ffffff;
+}
+#footer #copyright {
+  color: #ffffff;
+}
+.nav-previous {
+  float: left;
+}
+.nav-next {
+  float: right;
+}
+@media (max-width: 959px) {
+  #container {
+    width: 100%;
+  }
+}

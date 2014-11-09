@@ -1,0 +1,300 @@
+/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+/* ----IMPORTS---- */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+/* ----GLOBAL STYLING---- */
+html {
+	background-color: #404040;
+}
+
+body {
+	line-height: 1.5;
+}
+
+body {
+	background-color: #f9f9f9;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+input[type=button],input[type=submit] {
+	-webkit-appearance: button;
+}
+
+/* ----FONT STYLING---- */
+h1,h2,h3,h4,h5,h6,p {
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 35px;
+}
+h2 {
+	font-size: 25px;
+}
+h3 {
+	font-size: 22px;
+	font-weight:600;
+}
+h4 {
+	font-size: 20px;
+	font-weight:600;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+	font-weight:600;
+}
+h1, h2, h3, h4, h5, h6 {clear: both;}
+p {
+	margin-bottom: 1.5em;
+}
+i {
+	font-style:italic;
+}
+blockquote {
+	margin: 0 1.5em;
+	border-left: 3px solid @brand-secondary;
+	padding-left: 15px;
+	quotes: "" "";
+}
+code {
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #c7254e;
+	background-color: #f9f2f4;
+}
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-left:10px;
+}
+ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+	margin-left:10px;
+}
+ul ul, ol ul {
+	list-style-type: circle;
+	list-style-position: inside;
+	margin-left: 15px;
+}
+ol ol, ul ol {
+	list-style-type: lower-latin;
+	list-style-position: inside;
+	margin-left: 15px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ----COLORS---- */
+/* Brand Colors */
+@brand-primary:#5677FC;
+@brand-primary-dark:#3B50CE;
+@brand-secondary:#E53935;
+/* Text Colors */
+@text:#212121;
+@text-secondary:#727272;
+@text-hint:#B8B8B8;
+@text-border:#DADADA;
+/* Background Colors */
+@footer:#404040;
+@body:#f9f9f9;
+/*Other Colors */
+@white:#FFFFFF;
+
+/* ----GENERIC THEME STYLING---- */
+* {
+	color:@text;
+}
+
+.aligncenter {clear: both;display: block;margin: 0 auto;}
+
+a {
+	color: @brand-secondary;
+	text-decoration: none;
+}
+
+hr {
+	background-color: @text-border;
+	color: @text-border;
+}
+
+/* ----HEADER---- */
+#header {
+	width: 100%;
+
+	a {
+		color:@white;
+	}
+
+	#branding {
+		background-color: #5677FC;
+		color: @white;
+		padding: 30px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		#site-description {
+			color:@white;
+		}
+
+		a {
+			font-size:35px;
+		}
+	}
+
+	#menu {
+		background-color: @brand-primary-dark;
+		color: #FFF;
+		padding: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		overflow: auto;
+
+		li {
+			display:inline-block;
+			margin-left:20px;
+		}
+
+		#search {
+			float:left;
+		}
+
+		#s {
+			border: none;
+			font-size: 14px;
+			padding-left: 5px;
+			padding-right: 5px;
+			vertical-align:middle;
+		}
+
+		#searchsubmit {
+			height: 19px;
+			vertical-align: middle;
+			border-radius: 0 !important;
+			background-color: #fff;
+			border: none;
+			margin-left: -4px;
+			border-left: 1px solid #cccccc;
+		}
+	}
+
+	.menu {
+		display: inline-block;
+		float: right;
+	}
+}
+
+/* ----CONTAINER---- */
+#container {
+	min-height: 400px;
+	width:960px;
+	margin-left: auto;
+	margin-right: auto;
+
+	#content {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+		article {
+			margin-bottom:40px;
+
+			header > h2 {
+				margin-bottom:20px;
+			}
+			.post-edit-link {
+				display:none;
+			}
+			.entry-meta {
+				margin-bottom:10px;
+				font-size:12px;
+			}
+			.entry-content, .entry-summary {
+				margin-bottom:10px;
+			}
+			.entry-footer {
+				margin-bottom:10px;
+				font-size:12px;
+
+				.cat-links {
+					color:@text-secondary;
+				}
+				.tag-links {
+					color:@text-secondary;
+				}
+
+				a {
+					font-size: 12px;
+					background-color: @brand-secondary;
+					color: #fff;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+		}
+	}
+
+	.header {
+		margin-bottom:30px;
+	}
+}
+
+.widget-container {
+	list-style-type:none;
+
+	ul {
+		margin-bottom:20px;
+
+		li {
+			list-style-type:none;
+			margin-bottom:5px;
+			margin-top:5px;
+		}
+	}
+}
+
+.widget-title {
+	font-weight:400;
+}
+
+/* ----FOOTER---- */
+#footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: @footer;
+	color: @white;
+
+	#copyright {
+		color:@white;
+	}
+}
+
+.nav-previous {
+		float:left;
+	}
+	.nav-next {
+		float:right;
+	}
+
+@media (max-width:959px){
+	#container {
+		width:100%;
+	}
+}
